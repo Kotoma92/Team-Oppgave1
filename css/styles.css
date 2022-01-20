@@ -1,0 +1,66 @@
+html {
+    background-color: hotpink;
+    text-align: center;
+    justify-content: center;
+}
+
+div {
+    display:inline-block;
+}
+
+img {
+    max-width: 150px;
+    max-height: 100px;
+    margin: 15px;
+}
+
+#birb {
+    color: chartreuse;
+    padding: 5px;
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px; 
+}
+
+#knapp2 {
+    background-color: black;
+    color: chartreuse;
+    padding: 5px;
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+#knapp3 {
+    background-color: black;
+    color: chartreuse;
+    padding: 5px;
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.valgt {
+    border: 5px dotted black;
+}
+
+#inventory {
+    margin: 50px;
+    width:500px;
+    height:450px;
+    background-color:lightgrey;
+    border-color:black;
+    border: solid;
+    border-top: transparent;
+    border-radius: 5px;
+    display:inline-block;
+}
+
+#inventory.img {
+    display:inline-block;
+    width: 10px;
+    height: 10px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teamoppgave uke 3</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Inventory teamoppgave - uke 3</h1>
+
+<div id="Object">
+    <div onclick="chooseItem(this.innerHTML)"> <img src="./img/birb.png"> </div>
+    <div onclick="chooseItem(this.innerHTML)"> <img src="./img/badbanana.png"> </div>
+    <div onclick="chooseItem(this.innerHTML)"> <img src="./img/papir.png"> </div>
+    <div onclick="chooseItem(this.innerHTML)"> <img src="./img/dedbirb.png"> </div>
+    <div onclick="chooseItem(this.innerHTML)"> <img src="./img/okaydude.png"> </div>
+    
+</div>
+
+<br>
+    <button id="knapp" onclick="toInventory()">Legg til</button>
+    <button id="knapp" onclick="removeAll()">Fjern alt</button>
+    <br>
+    <div id="inventory"></div>
+    
+<script>
+
+    var chosenImg = document.getElementById('Object');
+    const inventoryDiv = document.getElementById('inventory');
+    let inventory = "";
+  
+    function chooseItem(chosen) {
+        inventory += chosen;
+        return inventory;
+    }
+
+    function toInventory() {
+        inventoryDiv.innerHTML = myInventory();
+    }
+
+    function myInventory(){
+        return inventory;
+    }
+
+    function removeAll(chosen){
+        inventoryDiv.innerHTML = "";
+        inventory = null;
+    }
+
+</script>
+
+</body>
+</html>
